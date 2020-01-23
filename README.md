@@ -1,4 +1,4 @@
-### Proyecto Personal
+# Proyecto Personal
 
 Este proyecto es realizado basado en:
 - React
