@@ -1,0 +1,47 @@
+.form__group {
+  position: relative;
+  color: $gray_3;  
+  margin-bottom: 16px;
+}
+
+input {
+  border: none;
+  outline: none;  
+}
+
+.form__label {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  transition: 0.2s;
+  transform: translateY(-50%);
+}
+
+.form__field {
+  border: 1px solid $dark-gray;
+  border-radius: 4px;
+  padding: 16px;
+  width: 100%;
+  font-size: 16px;  
+  font-family: 'Lato', sans-serif;
+  line-height: 24px;
+  color: $light-gray;
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {    
+    font-size: 16px;  
+    top: 50%;    
+  }
+}
+
+.form__field:focus,
+.form__field:active {
+  ~ .form__label {
+    top: 13px;
+    font-size: 12px;
+  }
+}
